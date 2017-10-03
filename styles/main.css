@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'ArialMT';
+    src:url("../fonts/ArialMT.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hortensia';
+    src:url("../fonts/Hortensia.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top:26px; 
+    overflow-y: hidden;
+}
+
+/*****header******/
+
+.header {
+    max-width: 100%;
+    padding: 10px;
+    background-color: #3b1f74;
+}
+
+.header__border {
+    border: 2px solid #deddf3;
+} 
+
+.header__content {
+    width: 1166px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.header__content_img {
+    position: absolute;
+    top:18px;
+}
+
+.header__text {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 240px;
+}
+
+.header__text_h1 {
+    font-size: 45px;
+    letter-spacing: 0.3px;
+    color: #deddf3;
+    margin: 45px 0;
+    line-height: 1.2;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header__list_item {
+    list-style-type: none;
+    /* margin: 10px 0 20px 0; */
+    
+}
+
+.header__list_item:nth-child(2) {
+    margin-left: 20px;
+}
+
+.header__list_item a {
+    margin-left: 20px;
+    text-decoration: none;
+    color:#fbfbfb;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    vertical-align: top;
+}
+
+/*navigation*/
+.nav {
+    width: 1166px;
+    margin:60px auto 0 auto;
+    border-top:2px solid #3b1f74;
+    border-bottom:2px solid #3b1f74;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px 0;
+}
+
+.nav__list_item {
+    list-style-type: none;
+}
+
+.nav__list_item a {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color:#3b1f74;
+    text-decoration: none;
+}
+
+/*main*/
+.main {
+    width: 1166px;
+    margin: 85px auto 0 auto;
+    display: flex;
+}
+
+.main__text {
+    width: 50%;
+}
+
+.main__text_greeting {
+    font-family: Arial;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    text-indent: 40px;
+    color: #444444;
+    text-align: justify;
+}
+
+.main__list {
+    margin-top: 30px;
+}
+
+.main__list_item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main__list_item a {
+    text-decoration: underline;
+    font-size: 26px;
+    color:#3b1f74;
+    margin-left: 20px;
+}
+.main__image {
+    width: 50%;
+    position: relative;
+    top:-70px;
+    right:30px;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #3b1f74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a {
+    margin: 0 15px;
+}
+
+/* о породе */
+.about-breed {
+    width: 1166px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    /* justify-content: space-around; */
+}
+.about-breed__item {
+    background-color: #eeedf9;
+    padding: 25px;
+    margin-right: 15px;
+}
+.about-breed__item:last-child {
+    margin-right: 0;
+}
+.about-breed__item_name {
+    font-family: Hortensia;
+    font-weight: bolder;
+    font-size: 36px;
+    color:#3b1f74;
+}
+.about-breed__item_text {
+    margin-top: 30px;
+    font-size: 18px;
+}
+.about-breed__link {
+    display: block;
+    margin-top: 45px;
+    font-size: 24px;
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+}
+.about-breed__item_image {
+    margin-top: 40px;
+}
+
+/**/
+.issues {
+    display: flex;
+    justify-content: space-between;
+    width: 1166px;
+    margin: 30px auto 0 auto;
+}
+
+.issues__item {
+    width: 45%; 
+    border: 2px solid #3b1f74;
+    text-align: center;
+    padding: 40px 0 0 40px;
+}
+
+.issues__item_name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.issues__content {
+    display: flex;
+}
+
+.issues__content_text {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.issues__content_image-2 {
+    position: relative;
+    top:76px;
+}
+
+/*наши собаки*/
+.dogs {
+    width: 1166px;
+    margin: 20px auto 0 auto;
+}
+
+.dogs__title {
+    font-size:45px;
+    text-align: left;
+}
+
+.dogs__item {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #d8d2e3;
+}
+
+.dogs__item_info {
+    margin-left:20px; 
+}
+
+.dogs__item_name {
+    font-family: Hortensia;
+    font-size: 40px;
+    color:#3b1f74;
+}
+
+.dogs__item_text {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+/*farm*/
+.farm {
+    width: 1166px;
+    margin: 0 auto;
+}
+
+.farm_title {
+    font-size: 35px;
+    margin:20px 0;
+    text-align: center;
+}
+
+.farm_text {
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 40px;
+    color:#2d2d2d;
+}
+
+.farm__images {
+    margin-top: 20px;
+}
+
+.bx-wrapper {
+    border-top:1px solid #3b1f74;
+    border-bottom: 1px solid #3b1f74;
+    padding: 20px 0;
+}
+
+.bx-wrapper .bx-pager {
+    display: none;
+}
+
+
+/*breed-shpiz*/
+.breed-shpiz {
+    width: 1166px;
+    margin: 0 auto;
+}
+
+.breed-shpiz_title {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.breed-shpiz__content {
+    font-size: 25px;
+    color:#0e0e0e;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.breed-shpiz__content p {
+    text-indent: 30px;
+}
+
+.breed-shpiz__content_img {
+    float: left;
+    margin-right: 20px;
+}
+
+.breed-shpiz__content_title {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bolder;
+}
