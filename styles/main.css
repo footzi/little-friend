@@ -335,9 +335,43 @@ body {
     float: left;
     margin-right: 20px;
 }
-
+.breed-shpiz__content_img~.img-2 {
+    float: right;
+    margin:0 0 0 20px;
+}
+.breed-shpiz__content_img~.img-3 {
+    margin-top: 20px;
+}
 .breed-shpiz__content_title {
     margin: 20px 0;
     font-size: 28px;
     font-weight: bolder;
+}
+
+
+/*puppies*/
+.puppies {
+    margin-top: 50px;
+    width: 1166px;
+    margin: 0 auto;
+    background-color: #ebe8f1;
+}
+
+.puppies__item {
+    margin-top: 20px;
+}
+
+.puppies__item_title {
+    font-size: 25px;
+}
+
+.puppies__content_images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.puppies__content_oper {
+    font-size: 100px;
 }
