@@ -14,7 +14,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    padding-top:26px; 
+    padding-top:9px; 
     overflow-y: hidden;
 }
 
@@ -38,7 +38,11 @@ body {
 
 .header__content_img {
     position: absolute;
-    top:18px;
+    top:0;
+}
+
+.header__content_img {
+    width: 10%;
 }
 
 .header__text {
@@ -48,10 +52,10 @@ body {
 }
 
 .header__text_h1 {
-    font-size: 45px;
+    font-size: 28px;
     letter-spacing: 0.3px;
     color: #deddf3;
-    margin: 45px 0;
+    margin: 30px 0;
     line-height: 1.2;
 }
 
@@ -61,9 +65,12 @@ body {
     justify-content: space-around;
 }
 .header__list_item {
+    display: flex;
+    align-items: center;
     list-style-type: none;
-    /* margin: 10px 0 20px 0; */
-    
+}
+.header__list_item img {
+    width: 10%;
 }
 
 .header__list_item:nth-child(2) {
@@ -74,15 +81,13 @@ body {
     margin-left: 20px;
     text-decoration: none;
     color:#fbfbfb;
-    font-size: 20px;
-    letter-spacing: 0.1px;
-    vertical-align: top;
+    font-size: 13px;
 }
 
 /*navigation*/
 .nav {
     width: 1166px;
-    margin:60px auto 0 auto;
+    margin:30px auto 0 auto;
     border-top:2px solid #3b1f74;
     border-bottom:2px solid #3b1f74;
 }
@@ -91,7 +96,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding:20px 0;
+    padding:1px 0;
 }
 
 .nav__list_item {
@@ -100,7 +105,7 @@ body {
 
 .nav__list_item a {
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bolder;
     color:#3b1f74;
     text-decoration: none;
@@ -109,8 +114,9 @@ body {
 /*main*/
 .main {
     width: 1166px;
-    margin: 85px auto 0 auto;
+    margin: 60px auto 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .main__text {
@@ -119,7 +125,7 @@ body {
 
 .main__text_greeting {
     font-family: Arial;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 0.1px;
     text-indent: 40px;
     color: #444444;
@@ -127,7 +133,7 @@ body {
 }
 
 .main__list {
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .main__list_item {
@@ -136,39 +142,48 @@ body {
     align-items: center;
 }
 
+.main__list_item img {
+    width: 4%;
+}
+
 .main__list_item a {
     text-decoration: underline;
-    font-size: 26px;
+    font-size: 22px;
     color:#3b1f74;
     margin-left: 20px;
 }
 .main__image {
-    width: 50%;
+    width: 45%;
     position: relative;
-    top:-70px;
-    right:30px;
+    top:-27px;
+    right:0;
 }
 
 /*footer*/
 .footer {
+    margin-top: 45px;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #3b1f74;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.footer img {
+    width: 70%;
+}
 .footer a {
     margin: 0 15px;
 }
 
+
 /* о породе */
 .about-breed {
     width: 1166px;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     display: flex;
     text-align: center;
-    /* justify-content: space-around; */
 }
 .about-breed__item {
     background-color: #eeedf9;
@@ -181,38 +196,40 @@ body {
 .about-breed__item_name {
     font-family: Hortensia;
     font-weight: bolder;
-    font-size: 36px;
+    font-size: 34px;
     color:#3b1f74;
 }
 .about-breed__item_text {
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 18px;
 }
 .about-breed__link {
     display: block;
-    margin-top: 45px;
-    font-size: 24px;
+    margin-top: 30px;
+    font-size: 20px;
     text-decoration: underline;
     color: black;
     text-transform: uppercase;
 }
 .about-breed__item_image {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-/**/
+/*issues*/
 .issues {
     display: flex;
     justify-content: space-between;
     width: 1166px;
-    margin: 30px auto 0 auto;
+    margin: 60px auto 0 auto;
+    border-top: 1px solid #3b1f74;
+    padding-top: 60px; 
 }
 
 .issues__item {
     width: 45%; 
-    border: 2px solid #3b1f74;
+    border: 1px solid #3b1f74;
     text-align: center;
-    padding: 40px 0 0 40px;
+    padding: 30px 0 0 30px;
 }
 
 .issues__item_name {
@@ -226,16 +243,19 @@ body {
 }
 
 .issues__content_text {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
 }
 
-.issues__content_image-2 {
+.issues__content_image {
+    width: 1000px;
+}
+.issues__item:nth-child(2) .issues__content_image {
     position: relative;
-    top:76px;
+    top:18px;
 }
 
 /*наши собаки*/
@@ -274,6 +294,11 @@ body {
 
 
 /*farm*/
+
+.page-farm .issues {
+    padding: 0;
+    border: 0;
+}
 .farm {
     width: 1166px;
     margin: 0 auto;
@@ -281,20 +306,21 @@ body {
 
 .farm_title {
     font-size: 35px;
-    margin:20px 0;
+    margin-top:35px;
     text-align: center;
 }
 
 .farm_text {
-    font-size: 17px;
+    margin-top: 45px;
+    font-size: 20px;
     line-height: 1.2;
     text-align: justify;
     text-indent: 40px;
-    color:#2d2d2d;
+    color:#444444;
 }
 
 .farm__images {
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 .bx-wrapper {
@@ -359,6 +385,15 @@ body {
 
 .puppies__item {
     margin-top: 20px;
+    padding: 0 20px;
+}
+
+.puppies__item:nth-child(2) .puppies__content_images {
+    justify-content: start;
+}
+
+.puppies__item:nth-child(3) .puppies__content_images:nth-child(2) {
+    justify-content: start;
 }
 
 .puppies__item_title {
@@ -367,11 +402,79 @@ body {
 
 .puppies__content_images {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
-    padding: 0 20px;
     margin-top: 20px;
+}
+
+.puppies__content_parent {
+    width: 190px;
+}
+
+.puppies__content_parent p {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: center;
 }
 .puppies__content_oper {
     font-size: 100px;
+    margin-top: 40px;
 }
+
+
+/*contacts*/
+.contacts__content {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: #d8d2e3;
+    text-align: left;
+}
+
+.contacts__content_title {
+    font-size: 18px;
+}
+
+.contacts__content_adress {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #3b1f74;
+}
+
+.contacts__content_adress p {
+    margin: 8px 0;
+}
+.contacts__content_adress span {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.contacts__content_comment {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #8d8c8e;
+}
+
+.contacts__content_form {
+    margin-top: 20px;
+}
+
+.contacts__content_form input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+.contacts__content_form textarea {
+    height: 100px
+}
+.contacts__content_form button {
+    margin-top: 20px;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    color: #3b1f74;
+}
+
+
+
+
