@@ -9,39 +9,8 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__border">
-            <div class="header__content">
-                <a href="index.html"><img class="header__content_img" src="images/logo.png" alt="Dolce Little Friend"></a>
-                <div class="header__text">
-                    <ul class="header__list">
-                        <li class="header__list_item">
-                            <img src="images/marker.png" alt="Померанский шпиц">
-                            <a href="#">Померанский шпиц</a>
-                        </li>
-                        <li class="header__list_item">
-                            <img src="images/marker.png" alt="Той-терьер">
-                            <a href="#">Той-терьер</a>
-                        </li>
-                        <li class="header__list_item">
-                            <img src="images/marker.png" alt="Малтийская болонка">
-                            <a href="#">Малтийская болонка</a>
-                        </li>
-                    </ul>
-                    <h1 class="header__text_h1">Dolce Little Friend</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list_item"><a href="farm.html">О питомнике</a></li>
-            <li class="nav__list_item"><a href="about.html">О породах</a></li>
-            <li class="nav__list_item"><a href="#">Наши собаки</a></li>
-            <li class="nav__list_item"><a href="#">Щенки</a></li>
-            <li class="nav__list_item"><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
+    <header class="header"></header>
+    <nav class="nav"></nav>
     <main>
         <section class="dogs">
             <p class="dogs__title">Наши собаки:</p>
@@ -73,37 +42,15 @@
                 </div>
             </div>
         </section>
-        <section class="issues">
-            <div class="issues__item">
-                <h3 class="issues__item_name">Как выбрать щенка?</h3>
-                <div class="issues__content">
-                    <p class="issues__content_text">
-                        Какие стандарты породы? Что такое шоу-класс, брид-класс и пэт-класс? Мальчик или девочка? 
-                        Какой окрас выбрать? Какого размера и веса должна быть собачка? Характер?
-                    </p>
-                    <div class="issues__content_image" >
-                        <img src="images/breed-4.png" alt="" >
-                    </div>
-                </div> 
-            </div>
-            <div class="issues__item">
-                <h3 class="issues__item_name">Какую породу выбрать?</h3>
-                <div class="issues__content">
-                    <p class="issues__content_text">
-                        Пушистые, игривые комочки шпицы? Невероятно жизнерадостные той-терьеры? Утонченная и нежная 
-                        мальтезе?
-                    </p>
-                    <div class="issues__content_image" >
-                        <img src="images/breed-5.png" alt="" >
-                    </div>
-                </div> 
-            </div>
-        </section>
+        <section class="issues"></section>
     </main>
-    <footer class="footer">
-        <a href="#"><img src="images/icons/f.png" alt="facebook"></a>
-        <a href="#"><img src="images/icons/v.png" alt="vkontakte"></a>
-        <a href="#"><img src="images/icons/i.png" alt="instagram"></a>
-    </footer>
+    <footer class="footer"></footer>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script>
+        $('.header').load('components/header.html');
+        $('.nav').load('components/nav.html');
+        $('.issues').load('components/issues.html');
+        $('.footer').load('components/footer.html');
+    </script>
 </body>
 </html>

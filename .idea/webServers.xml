@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d491684d-e7c5-4b76-a5a6-6f48c0ccb41e" name="footzi.xyz(little)" url="http://ftp.footzi.xyz">
+        <fileTransfer host="ftp.footzi.xyz" port="21" rootFolder="/public_html/little-friend">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
